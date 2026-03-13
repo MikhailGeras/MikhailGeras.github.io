@@ -59,6 +59,4 @@
 
 ## Ссылка на проект
 
-После публикации на GitHub Pages ссылка на отчёт будет иметь вид:
-
-`https://mikhailgeras.github.io/labs/lab2/`
+`https://github.com/MikhailGeras/2SEMLABY/tree/main/LR2`

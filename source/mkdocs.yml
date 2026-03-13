@@ -1,0 +1,16 @@
+site_name: Портфолио лабораторных работ
+site_description: Сайт-портфолио по дисциплине
+site_author: Михаил
+
+theme:
+  name: material
+  language: ru
+
+nav:
+  - Главная: index.md
+  - Об авторе: about.md
+  - Лабораторные работы:
+      - Общий раздел: labs/index.md
+      - Лабораторная работа 1: labs/lab1.md
+      - Лабораторная работа 2: labs/lab2.md
+      - Лабораторная работа 3: labs/lab3.md

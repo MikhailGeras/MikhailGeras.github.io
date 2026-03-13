@@ -61,4 +61,4 @@
 
 После публикации на GitHub Pages ссылка на отчёт будет иметь вид:
 
-`https://imaskot.github.io/lab2/`
+`https://mikhailgeras.github.io/labs/lab2/`

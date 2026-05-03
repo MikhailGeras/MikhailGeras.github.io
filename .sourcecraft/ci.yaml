@@ -1,0 +1,31 @@
+on:
+  push:
+    - workflows: [build-site]
+      filter:
+        branches: ["main"]
+
+workflows:
+  build-site:
+    tasks:
+      - name: build-and-publish
+        cubes:
+          - name: build-mkdocs
+            image: docker.io/library/python:3.12
+            script:
+              - apt-get update && apt-get install -y git
+              - python -m pip install --upgrade pip
+              - pip install -r requirements.txt
+              - cd source
+              - mkdocs build --clean --site-dir ../site
+              - cd ..
+              - mkdir -p /tmp/site
+              - cp -r site/* /tmp/site/
+              - git config user.name "sourcecraft-ci"
+              - git config user.email "sourcecraft-ci@example.com"
+              - git checkout --orphan release
+              - git rm -rf . || true
+              - mkdir -p site
+              - cp -r /tmp/site/* site/
+              - git add site
+              - git commit -m "Deploy MkDocs site" || echo "No changes to deploy"
+              - git push origin HEAD:release --force

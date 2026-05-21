@@ -1,0 +1,1 @@
+[Открыть репозиторий SourceCraft](https://sourcecraft.dev/mihaylogerasimov/itmo-python-lab-template)

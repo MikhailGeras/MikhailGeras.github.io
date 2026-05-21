@@ -1,0 +1,1 @@
+[Открыть ноутбук в Google Colab](https://colab.research.google.com/drive/1ghvRxIdyJrgJSPi5SWFqTBbqTcEBA-xh?usp=sharing)
